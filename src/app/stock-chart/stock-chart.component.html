@@ -1,0 +1,11 @@
+<div class="body mt-5">
+    <div style="text-align:center">
+        <apx-chart [series]="stockChartOptions.series" [chart]="stockChartOptions.chart"
+                   [xaxis]="stockChartOptions.xaxis" [title]="stockChartOptions.title" #chart></apx-chart>
+        <div class="col-lg-12 clearfix">
+            <a class="float-left mr-3 btn {{mode=='1 month'?'btn-success':'btn-secondary'}} text-white" (click)="changeRange('1 month')">1 month</a>
+            <a class="float-left mr-3 btn {{mode=='12 months'?'btn-success':'btn-secondary'}} text-white"  (click)="changeRange('12 months')">12 months</a>
+        </div>
+
+    </div>
+</div>
